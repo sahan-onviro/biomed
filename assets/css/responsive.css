@@ -1,0 +1,606 @@
+@media only screen and (max-width: 1199px) {
+    .h-banner .main-banner .banner-info h1 {
+        font-size: 36px;
+        padding: 0 30px;
+    }
+
+    .h-banner figure {
+        height: 490px;
+    }
+
+    .h-seller .tab-content .seller-box {
+        ul {
+            margin-bottom: 30px;
+
+            li {
+                margin: 0;
+
+                [class*="fa-"] {
+                    margin-left: 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        figure {
+            max-width: 140px;
+            max-height: 140px;
+        }
+    }
+
+    .home-page .h-whychoose .why-box {
+        /* height: 100%; */
+    }
+
+    .h-whychoose .why-box {
+        min-height: 160px;
+
+        h4 {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /* overflow: hidden; */
+            display: inherit;
+            overflow-y: clip;
+            overflow-x: hidden;
+        }
+
+    }
+
+    .about-page .h-whychoose {
+        .why-box {}
+
+        .why-logo {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+            figure {
+                height: 300px;
+            }
+        }
+    }
+
+    .services-page .services-content::before {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product-detail-page .product-slider-for .product-zoom-container .overlay-box,
+    .product-detail-page .slider-wrapper {
+        margin-bottom: 30px;
+
+        .img-2,
+        .overlay-box {
+            display: none;
+        }
+    }
+
+    .event-page .event-wrapper .event-slider .slick-arrow {
+        left: -300px;
+
+        &.slick-next {
+            left: -240px;
+        }
+
+        &::before {
+            font-size: 18px;
+            height: 36px;
+            width: 36px;
+            line-height: 33px;
+        }
+    }
+
+    .event-page .all-event-wrapper .event-box figure {
+        height: 220px;
+    }
+
+
+    .h-services .services-box figure,
+    .h-best-seller .services-box figure {
+        height: 330px;
+    }
+
+    .h-testimonials .testimonial-box {
+        padding: 50px;
+        font-size: 14px;
+
+        figure {
+            margin-bottom: 10px;
+        }
+    }
+
+    footer {
+        font-size: 14px;
+
+
+        .footer-wrapper {
+            padding-top: 10px;
+        }
+
+        .footer-social {
+            margin-top: 30px;
+
+            ul li {
+                margin-left: 0 !important;
+
+                a {
+                    width: 36px;
+                    height: 36px;
+                    line-height: 36px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .copyright {
+            text-align: left;
+        }
+
+
+    }
+
+    .product-detail-page .product-slider-for .product-zoom-container img {
+        object-fit: contain;
+    }
+
+    .h-services .marquee-wrapper .services-box {
+        height: 240px;
+    }
+
+    .about-page .about-profile {
+        padding-bottom: 0;
+    }
+
+    .about-page .about-gallery .gallery-item {
+        height: 180px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {}
+
+
+@media only screen and (max-width: 991px) {
+    body.height-fixed {
+        overflow: hidden;
+        position: relative;
+
+        .height-fixed-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 10;
+            content: '';
+        }
+    }
+
+    .navbar .navbar-toggler {
+        order: 2;
+        border: 0;
+
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+
+    .navbar .phone-search {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .navbar .navbar-nav {
+        gap: 0;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 0;
+        right: -400px;
+        background: var(--light-grey);
+        z-index: 20;
+        height: 100vh;
+        width: 100%;
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 30px;
+        overflow-y: scroll;
+        transition: right 0.3s ease-in-out;
+
+        &.show {
+            right: calc(1.5rem* -0.5);
+
+        }
+
+
+        >* {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .nav-item {
+            padding: 0 30px;
+
+            &:not(:last-child) {
+                border-bottom: 1px dotted var(--grey);
+            }
+        }
+
+        .nav-link {
+            padding: 14px 0;
+
+            &::before {
+                display: none;
+            }
+
+        }
+
+        .dropdown {
+            .dropdown-menu {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+
+
+    }
+
+    .logo-sm {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px 10px;
+        color: var(--white);
+        border-bottom: 1px solid var(--primary);
+        align-items: center;
+        width: 100%;
+        background: var(--primary);
+
+        .logo-name {
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+
+        .close {
+            font-size: 18px;
+            background: var(--black-20);
+            color: var(--white);
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 32px;
+            border-radius: 50%;
+        }
+    }
+
+    .services-page {
+        .services-icons-wrapper {
+            padding-top: 40px;
+        }
+
+        .services-icon {
+            height: 100%;
+
+            .svg-icon {
+                width: 60%;
+                height: 60%;
+            }
+        }
+    }
+
+    .event-page .event-wrapper .event-slider .slick-arrow {
+        left: -346px;
+
+        &.slick-next {
+            left: -300px;
+        }
+    }
+
+    .event-page .event-wrapper .event-box figure {
+        height: 260px;
+    }
+
+    .career-page .career-posting .career-box article {
+        margin-bottom: 23px;
+    }
+
+    .career-page .career-posting .career-box ul li span {
+        margin-top: 7px;
+    }
+
+    .contact-page .contact-content .contact-form {
+        margin-top: 30px;
+    }
+
+    .product-filter-wrapper {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        background: var(--white);
+        z-index: 21;
+        height: 100vh;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 30px;
+        overflow-y: scroll;
+        transition: right 0.3s ease-in-out;
+
+        &.show {
+            left: 0;
+
+            .sidebar-close {
+                display: block;
+            }
+        }
+
+        .search-wrapper,
+        .brand-wrapper,
+        .categories-wrapper {
+            width: 100%;
+        }
+    }
+
+    .sidebar-btn {
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        background: var(--primary);
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 8px 14px;
+        color: var(--white);
+        font-size: 14px;
+        top: 50%;
+
+        [class*="fa-"] {
+            margin-right: 5px;
+        }
+
+        &:hover {
+            background: var(--secondary);
+            color: var(--sub-heading);
+        }
+    }
+
+    .sidebar-close {
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        display: none;
+        background: var(--grey-dark);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 8px 14px;
+        color: var(--white);
+        font-size: 14px;
+        top: 50%;
+    }
+
+    .product-detail-page .product-slider-nav .slick-list {
+        margin: 0 0 0 -4.5px;
+    }
+
+    /*.product-detail-page .product-slider-nav .slick-slide {
+        margin: 0;
+    }
+
+    .product-detail-page .product-slider-nav figure {
+        margin: 0 5px;
+    } */
+    .h-testimonials .testimonial-box {
+        padding: 100px 40px;
+        font-size: 14px;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .h-best-seller {
+        padding-top: 0;
+    }
+
+    .h-services .marquee-wrapper .services-box {
+        height: 240px;
+        width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .about-page .about-profile figure,
+    .about-page .about-ceo figure {
+        width: 300px;
+    }
+
+    .about-page .about-story .about-faq {
+        margin-top: 30px;
+    }
+
+    .about-page .about-ceo .heading-wrapper .sub-heading {
+        text-align: left;
+    }
+
+    .about-page .about-ceo figure {
+        margin-bottom: 30px;
+    }
+
+    .about-page .about-teams .team-box .team-content {
+        max-width: 270px;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    .h-seller .tab-content .tab-pane div:not(:first-child)>.seller-box {
+        border-left: 0;
+        margin-top: 30px;
+    }
+
+    footer {
+        text-align: center;
+
+        .footer-logo {
+            margin: 0 auto;
+        }
+
+        .footer-links,
+        .footer-info {
+            margin-bottom: 30px;
+        }
+
+        .footer-social .btn-wrapper {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h5 {
+            color: var(--sub-heading)
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    }
+
+    .about-page .about-profile article {
+        margin-bottom: 30px;
+    }
+
+    .home-page .h-whychoose {
+        padding-bottom: 50px;
+    }
+
+    .h-standfor {
+        padding: 0;
+    }
+
+    .h-whychoose .why-box:last-child {
+        margin-bottom: 20px;
+    }
+
+    .services-page .services-info {
+        .sub-heading {
+            font-size: 30px;
+        }
+
+        ul li {
+            font-size: 20px;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+
+
+    .event-page .event-wrapper .event-slider-wrapper {
+        padding-top: 30px;
+
+        .slick-dots {
+            bottom: -55px;
+
+            li {
+                margin: 0;
+
+                button::before {
+                    font-size: 14px;
+                    color: var(--primary);
+                }
+            }
+
+            .slick-active {}
+        }
+    }
+
+    .event-page .event-wrapper .event-absoulte {
+        position: static;
+    }
+
+    .event-page .event-wrapper .event-box figure {
+        height: 300px;
+    }
+
+    .career-page .career-teams .career-figures {
+        margin-top: 50px;
+    }
+
+    .career-page .career-posting .career-box ul {
+        margin-bottom: 20px;
+    }
+
+    .inner-banner .inner-info .heading-wrapper .heading {
+        font-size: 36px;
+    }
+
+    .job-page .job-form {
+        margin-bottom: 30px;
+    }
+
+    .navbar .phone-search ul .search-btn form {
+        right: -77px;
+    }
+
+    .h-services .marquee-wrapper .services-box {
+        height: 240px;
+    }
+
+    .about-page .about-gallery .gallery-item {
+        height: 130px;
+    }
+
+    .about-page .about-profile figure,
+    .about-page .about-ceo figure {
+        height: 240px;
+        width: 240px;
+    }
+
+    .about-page .about-gallery {
+        padding: 60px 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .h-services .marquee-wrapper .services-box {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .services-page .services-icon h6 {
+        word-wrap: break-word;
+    }
+
+    .product-detail-page .product-specification ul li b {
+        display: block;
+        width: 100%;
+    }
+
+    .about-page .about-story .about-faq {
+        padding: 10px 20px 20px;
+    }
+
+    .about-page .about-gallery .gallery-item {
+        height: 100px;
+    }
+
+    .about-page .about-teams .team-box {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .about-page .about-teams .team-box figure {
+        margin-bottom: 30px;
+    }
+
+    .about-page .about-teams .team-box .team-content {
+        order: 1;
+    }
+}
